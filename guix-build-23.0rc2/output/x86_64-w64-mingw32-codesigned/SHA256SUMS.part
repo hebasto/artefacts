@@ -1,0 +1,3 @@
+6ef21cc4f5a631dfe3d22dd23a9b0208e4f75f7bd36dce86516bb109d059f456  dist-archive/bitcoin-23.0rc2-codesignatures-3a9fd4c4d440.tar.gz
+b8dcfdce46c126370706da4343e412fb289badc023ac322f1f8122e7d54f017f  x86_64-w64-mingw32-codesigned/bitcoin-23.0rc2-win64-setup.exe
+171c73d026af002a4c5c01f2e1ca3dd8d19a7053aa1feea9cfa91751f5f00156  x86_64-w64-mingw32/bitcoin-23.0rc2-win-unsigned.tar.gz
