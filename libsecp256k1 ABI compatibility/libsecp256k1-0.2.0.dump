@@ -1,0 +1,2201 @@
+$VAR1 = {
+          'ABI_DUMPER_VERSION' => '1.3',
+          'ABI_DUMP_VERSION' => '3.5',
+          'Arch' => 'x86_64',
+          'GccVersion' => '11.3.0',
+          'Headers' => {
+                         'secp256k1.h' => 1,
+                         'secp256k1_ecdh.h' => 1,
+                         'secp256k1_extrakeys.h' => 1,
+                         'secp256k1_preallocated.h' => 1,
+                         'secp256k1_recovery.h' => 1,
+                         'secp256k1_schnorrsig.h' => 1
+                       },
+          'Language' => 'C',
+          'LibraryName' => 'libsecp256k1.so.1.0.0',
+          'LibraryVersion' => '0.2.0',
+          'NameSpaces' => {},
+          'Needed' => {
+                        'libc.so.6' => 1
+                      },
+          'PublicABI' => '1',
+          'Sources' => {
+                         'secp256k1.c' => 1
+                       },
+          'SymbolInfo' => {
+                            '10359' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'keypair',
+                                                               'type' => '5156'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_keypair_sec'
+                                       },
+                            '10782' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'keypair',
+                                                               'type' => '9351'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'seckey32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_keypair_create'
+                                       },
+                            '12150' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'tweaked_pubkey32',
+                                                               'type' => '435'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweaked_pk_parity',
+                                                               'type' => '84'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'internal_pubkey',
+                                                               'type' => '4692'
+                                                             },
+                                                      '4' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '2' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_xonly_pubkey_tweak_add_check'
+                                       },
+                            '13021' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output_pubkey',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'internal_pubkey',
+                                                               'type' => '4692'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '3' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_xonly_pubkey_tweak_add'
+                                       },
+                            '13681' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'xonly_pubkey',
+                                                               'type' => '9934'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'pk_parity',
+                                                               'type' => '2351'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '11764'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '2' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_xonly_pubkey_from_pubkey'
+                                       },
+                            '14369' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pk0',
+                                                               'type' => '4692'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'pk1',
+                                                               'type' => '4692'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'r12'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_xonly_pubkey_cmp'
+                                       },
+                            '14774' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output32',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '4692'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_xonly_pubkey_serialize'
+                                       },
+                            '15295' => {
+                                         'Header' => 'secp256k1_extrakeys.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '9934'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'input32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'rbx'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_xonly_pubkey_parse'
+                                       },
+                            '15959' => {
+                                         'Header' => 'secp256k1_recovery.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'signature',
+                                                               'type' => '16661'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'msghash32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_recover'
+                                       },
+                            '16666' => {
+                                         'Header' => 'secp256k1_recovery.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'signature',
+                                                               'type' => '17365'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'msghash32',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '435'
+                                                             },
+                                                      '4' => {
+                                                               'name' => 'noncefp',
+                                                               'type' => '368'
+                                                             },
+                                                      '5' => {
+                                                               'name' => 'noncedata',
+                                                               'type' => '505'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'r12',
+                                                    '2' => 'rbp',
+                                                    '3' => 'r13'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_sign_recoverable'
+                                       },
+                            '18207' => {
+                                         'Header' => 'secp256k1_recovery.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'sig',
+                                                               'type' => '18622'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'sigin',
+                                                               'type' => '16661'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_recoverable_signature_convert'
+                                       },
+                            '18627' => {
+                                         'Header' => 'secp256k1_recovery.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output64',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'recid',
+                                                               'type' => '2351'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'sig',
+                                                               'type' => '16661'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_recoverable_signature_serialize_compact'
+                                       },
+                            '19158' => {
+                                         'Header' => 'secp256k1_recovery.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'sig',
+                                                               'type' => '17365'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'input64',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'recid',
+                                                               'type' => '84'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_recoverable_signature_parse_compact'
+                                       },
+                            '20294' => {
+                                         'Header' => 'secp256k1_ecdh.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'point',
+                                                               'type' => '11764'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'scalar',
+                                                               'type' => '435'
+                                                             },
+                                                      '4' => {
+                                                               'name' => 'hashfp',
+                                                               'type' => '2804'
+                                                             },
+                                                      '5' => {
+                                                               'name' => 'data',
+                                                               'type' => '440'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '4' => 'r8'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdh'
+                                       },
+                            '21767' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'hash32',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tag',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'taglen',
+                                                               'type' => '67'
+                                                             },
+                                                      '4' => {
+                                                               'name' => 'msg',
+                                                               'type' => '435'
+                                                             },
+                                                      '5' => {
+                                                               'name' => 'msglen',
+                                                               'type' => '67'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'rbx'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_tagged_sha256',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '760'
+                                       },
+                            '22328' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubnonce',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'pubnonces',
+                                                               'type' => '23121'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'n',
+                                                               'type' => '67'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'r13'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_combine',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '734'
+                                       },
+                            '23126' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '23252'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seed32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbx',
+                                                    '1' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_context_randomize',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '726'
+                                       },
+                            '23257' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'rbx'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_tweak_mul',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '703'
+                                       },
+                            '23833' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_privkey_tweak_mul',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '699'
+                                       },
+                            '23965' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_seckey_tweak_mul',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '679'
+                                       },
+                            '24648' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '2' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_tweak_add',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '662'
+                                       },
+                            '25340' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_privkey_tweak_add',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '651'
+                                       },
+                            '25472' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'tweak32',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '2' => 'r13'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_seckey_tweak_add',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '635'
+                                       },
+                            '26296' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '10354'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_negate',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '608'
+                                       },
+                            '26687' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_privkey_negate',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '604'
+                                       },
+                            '26791' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '430'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_seckey_negate',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '589'
+                                       },
+                            '27247' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_create',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '571'
+                                       },
+                            '28380' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_seckey_verify',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '548'
+                                       },
+                            '2856' => {
+                                        'Data' => 1,
+                                        'Header' => 'secp256k1_ecdh.h',
+                                        'Return' => '2816',
+                                        'ShortName' => 'secp256k1_ecdh_hash_function_sha256'
+                                      },
+                            '28679' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'signature',
+                                                               'type' => '18622'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'msghash32',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'seckey',
+                                                               'type' => '435'
+                                                             },
+                                                      '4' => {
+                                                               'name' => 'noncefp',
+                                                               'type' => '368'
+                                                             },
+                                                      '5' => {
+                                                               'name' => 'noncedata',
+                                                               'type' => '505'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'r12',
+                                                    '2' => 'rbp',
+                                                    '3' => 'r13'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_sign',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '534'
+                                       },
+                            '2868' => {
+                                        'Data' => 1,
+                                        'Header' => 'secp256k1_ecdh.h',
+                                        'Return' => '2816',
+                                        'ShortName' => 'secp256k1_ecdh_hash_function_default'
+                                      },
+                            '3137' => {
+                                        'Data' => 1,
+                                        'Header' => 'secp256k1_schnorrsig.h',
+                                        'Return' => '3077',
+                                        'ShortName' => 'secp256k1_nonce_function_bip340'
+                                      },
+                            '31908' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'sig',
+                                                               'type' => '32552'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'msghash32',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '11764'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_verify',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '420'
+                                       },
+                            '32557' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'sigout',
+                                                               'type' => '18622'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'sigin',
+                                                               'type' => '32552'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_signature_normalize',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '401'
+                                       },
+                            '32946' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output64',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'sig',
+                                                               'type' => '32552'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_signature_serialize_compact',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '388'
+                                       },
+                            '33368' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'outputlen',
+                                                               'type' => '33882'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'sig',
+                                                               'type' => '32552'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '2' => 'rbp'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_signature_serialize_der',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '376'
+                                       },
+                            '33887' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'sig',
+                                                               'type' => '18622'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'input64',
+                                                               'type' => '435'
+                                                             }
+                                                    },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_signature_parse_compact',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '355'
+                                       },
+                            '3413' => {
+                                        'Header' => 'secp256k1_schnorrsig.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'sig64',
+                                                              'type' => '435'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'msg',
+                                                              'type' => '435'
+                                                            },
+                                                     '3' => {
+                                                              'name' => 'msglen',
+                                                              'type' => '67'
+                                                            },
+                                                     '4' => {
+                                                              'name' => 'pubkey',
+                                                              'type' => '4692'
+                                                            }
+                                                   },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_schnorrsig_verify'
+                                      },
+                            '34434' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'sig',
+                                                               'type' => '18622'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'input',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'inputlen',
+                                                               'type' => '67'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'rbx'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ecdsa_signature_parse_der',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '339'
+                                       },
+                            '35402' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey0',
+                                                               'type' => '11764'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'pubkey1',
+                                                               'type' => '11764'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'r12'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_cmp',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '289'
+                                       },
+                            '35863' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'output',
+                                                               'type' => '430'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'outputlen',
+                                                               'type' => '33882'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '11764'
+                                                             },
+                                                      '4' => {
+                                                               'name' => 'flags',
+                                                               'type' => '447'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'r13'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_serialize',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '266'
+                                       },
+                            '36702' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'pubkey',
+                                                               'type' => '10354'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'input',
+                                                               'type' => '435'
+                                                             },
+                                                      '3' => {
+                                                               'name' => 'inputlen',
+                                                               'type' => '67'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '1' => 'rbx'
+                                                  },
+                                         'Return' => '84',
+                                         'ShortName' => 'secp256k1_ec_pubkey_parse',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '248'
+                                       },
+                            '37914' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'scratch',
+                                                               'type' => '38014'
+                                                             }
+                                                    },
+                                         'Return' => '1',
+                                         'ShortName' => 'secp256k1_scratch_space_destroy',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '196'
+                                       },
+                            '38019' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'max_size',
+                                                               'type' => '67'
+                                                             }
+                                                    },
+                                         'Return' => '38014',
+                                         'ShortName' => 'secp256k1_scratch_space_create',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '191'
+                                       },
+                            '38125' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '23252'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'fun',
+                                                               'type' => '1350'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'data',
+                                                               'type' => '505'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbx',
+                                                    '2' => 'r12'
+                                                  },
+                                         'Return' => '1',
+                                         'ShortName' => 'secp256k1_context_set_error_callback',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '182'
+                                       },
+                            '38298' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '23252'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'fun',
+                                                               'type' => '1350'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'data',
+                                                               'type' => '505'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbx',
+                                                    '2' => 'r12'
+                                                  },
+                                         'Return' => '1',
+                                         'ShortName' => 'secp256k1_context_set_illegal_callback',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '173'
+                                       },
+                            '38471' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '23252'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rdi'
+                                                  },
+                                         'Return' => '1',
+                                         'ShortName' => 'secp256k1_context_destroy',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '166'
+                                       },
+                            '38564' => {
+                                         'Header' => 'secp256k1_preallocated.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '23252'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbx'
+                                                  },
+                                         'Return' => '1',
+                                         'ShortName' => 'secp256k1_context_preallocated_destroy',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '159'
+                                       },
+                            '38724' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbx'
+                                                  },
+                                         'Return' => '23252',
+                                         'ShortName' => 'secp256k1_context_clone',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '148'
+                                       },
+                            '39037' => {
+                                         'Header' => 'secp256k1_preallocated.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'prealloc',
+                                                               'type' => '440'
+                                                             }
+                                                    },
+                                         'Return' => '23252',
+                                         'ShortName' => 'secp256k1_context_preallocated_clone',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '138'
+                                       },
+                            '39216' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'flags',
+                                                               'type' => '447'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbp'
+                                                  },
+                                         'Return' => '23252',
+                                         'ShortName' => 'secp256k1_context_create',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '127'
+                                       },
+                            '39551' => {
+                                         'Header' => 'secp256k1_preallocated.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'prealloc',
+                                                               'type' => '440'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'flags',
+                                                               'type' => '447'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rbx',
+                                                    '1' => 'rbp'
+                                                  },
+                                         'Return' => '23252',
+                                         'ShortName' => 'secp256k1_context_preallocated_create',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '104'
+                                       },
+                            '39723' => {
+                                         'Header' => 'secp256k1_preallocated.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ctx',
+                                                               'type' => '466'
+                                                             }
+                                                    },
+                                         'Reg' => {
+                                                    '0' => 'rdi'
+                                                  },
+                                         'Return' => '67',
+                                         'ShortName' => 'secp256k1_context_preallocated_clone_size',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '98'
+                                       },
+                            '39785' => {
+                                         'Header' => 'secp256k1_preallocated.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'flags',
+                                                               'type' => '447'
+                                                             }
+                                                    },
+                                         'Return' => '67',
+                                         'ShortName' => 'secp256k1_context_preallocated_size',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '84'
+                                       },
+                            '39941' => {
+                                         'Header' => 'secp256k1.h',
+                                         'Return' => '1',
+                                         'ShortName' => 'secp256k1_selftest',
+                                         'Source' => 'secp256k1.c',
+                                         'SourceLine' => '78'
+                                       },
+                            '454' => {
+                                       'Data' => 1,
+                                       'Header' => 'secp256k1.h',
+                                       'Line' => '234',
+                                       'Return' => '466',
+                                       'ShortName' => 'secp256k1_context_static',
+                                       'Source' => 'secp256k1.c',
+                                       'SourceLine' => '75'
+                                     },
+                            '4697' => {
+                                        'Header' => 'secp256k1_schnorrsig.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'sig64',
+                                                              'type' => '430'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'msg',
+                                                              'type' => '435'
+                                                            },
+                                                     '3' => {
+                                                              'name' => 'msglen',
+                                                              'type' => '67'
+                                                            },
+                                                     '4' => {
+                                                              'name' => 'keypair',
+                                                              'type' => '5156'
+                                                            },
+                                                     '5' => {
+                                                              'name' => 'extraparams',
+                                                              'type' => '5161'
+                                                            }
+                                                   },
+                                        'Reg' => {
+                                                   '0' => 'r10',
+                                                   '1' => 'rsi',
+                                                   '2' => 'rdx',
+                                                   '3' => 'rcx',
+                                                   '4' => 'r8',
+                                                   '5' => 'rdi'
+                                                 },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_schnorrsig_sign_custom'
+                                      },
+                            '471' => {
+                                       'Data' => 1,
+                                       'Header' => 'secp256k1.h',
+                                       'Line' => '237',
+                                       'Return' => '466',
+                                       'ShortName' => 'secp256k1_context_no_precomp',
+                                       'Source' => 'secp256k1.c',
+                                       'SourceLine' => '76'
+                                     },
+                            '483' => {
+                                       'Data' => 1,
+                                       'Header' => 'secp256k1.h',
+                                       'Line' => '630',
+                                       'Return' => '380',
+                                       'ShortName' => 'secp256k1_nonce_function_rfc6979',
+                                       'Source' => 'secp256k1.c',
+                                       'SourceLine' => '475'
+                                     },
+                            '494' => {
+                                       'Data' => 1,
+                                       'Header' => 'secp256k1.h',
+                                       'Line' => '633',
+                                       'Return' => '380',
+                                       'ShortName' => 'secp256k1_nonce_function_default',
+                                       'Source' => 'secp256k1.c',
+                                       'SourceLine' => '476'
+                                     },
+                            '5166' => {
+                                        'Header' => 'secp256k1_schnorrsig.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'sig64',
+                                                              'type' => '430'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'msg32',
+                                                              'type' => '435'
+                                                            },
+                                                     '3' => {
+                                                              'name' => 'keypair',
+                                                              'type' => '5156'
+                                                            },
+                                                     '4' => {
+                                                              'name' => 'aux_rand32',
+                                                              'type' => '435'
+                                                            }
+                                                   },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_schnorrsig_sign'
+                                      },
+                            '5350' => {
+                                        'Header' => 'secp256k1_schnorrsig.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'sig64',
+                                                              'type' => '430'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'msg32',
+                                                              'type' => '435'
+                                                            },
+                                                     '3' => {
+                                                              'name' => 'keypair',
+                                                              'type' => '5156'
+                                                            },
+                                                     '4' => {
+                                                              'name' => 'aux_rand32',
+                                                              'type' => '435'
+                                                            }
+                                                   },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_schnorrsig_sign32'
+                                      },
+                            '8662' => {
+                                        'Header' => 'secp256k1_extrakeys.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'keypair',
+                                                              'type' => '9351'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'tweak32',
+                                                              'type' => '435'
+                                                            }
+                                                   },
+                                        'Reg' => {
+                                                   '2' => 'r12'
+                                                 },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_keypair_xonly_tweak_add'
+                                      },
+                            '9356' => {
+                                        'Header' => 'secp256k1_extrakeys.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'pubkey',
+                                                              'type' => '9934'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'pk_parity',
+                                                              'type' => '2351'
+                                                            },
+                                                     '3' => {
+                                                              'name' => 'keypair',
+                                                              'type' => '5156'
+                                                            }
+                                                   },
+                                        'Reg' => {
+                                                   '2' => 'rbp'
+                                                 },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_keypair_xonly_pub'
+                                      },
+                            '9939' => {
+                                        'Header' => 'secp256k1_extrakeys.h',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'name' => 'ctx',
+                                                              'type' => '466'
+                                                            },
+                                                     '1' => {
+                                                              'name' => 'pubkey',
+                                                              'type' => '10354'
+                                                            },
+                                                     '2' => {
+                                                              'name' => 'keypair',
+                                                              'type' => '5156'
+                                                            }
+                                                   },
+                                        'Return' => '84',
+                                        'ShortName' => 'secp256k1_keypair_pub'
+                                      }
+                          },
+          'SymbolVersion' => {},
+          'Symbols' => {
+                         'libsecp256k1.so.1.0.0' => {
+                                                      'secp256k1_context_clone' => 1,
+                                                      'secp256k1_context_create' => 1,
+                                                      'secp256k1_context_destroy' => 1,
+                                                      'secp256k1_context_no_precomp' => -8,
+                                                      'secp256k1_context_preallocated_clone' => 1,
+                                                      'secp256k1_context_preallocated_clone_size' => 1,
+                                                      'secp256k1_context_preallocated_create' => 1,
+                                                      'secp256k1_context_preallocated_destroy' => 1,
+                                                      'secp256k1_context_preallocated_size' => 1,
+                                                      'secp256k1_context_randomize' => 1,
+                                                      'secp256k1_context_set_error_callback' => 1,
+                                                      'secp256k1_context_set_illegal_callback' => 1,
+                                                      'secp256k1_context_static' => -8,
+                                                      'secp256k1_ec_privkey_negate' => 1,
+                                                      'secp256k1_ec_privkey_tweak_add' => 1,
+                                                      'secp256k1_ec_privkey_tweak_mul' => 1,
+                                                      'secp256k1_ec_pubkey_cmp' => 1,
+                                                      'secp256k1_ec_pubkey_combine' => 1,
+                                                      'secp256k1_ec_pubkey_create' => 1,
+                                                      'secp256k1_ec_pubkey_negate' => 1,
+                                                      'secp256k1_ec_pubkey_parse' => 1,
+                                                      'secp256k1_ec_pubkey_serialize' => 1,
+                                                      'secp256k1_ec_pubkey_tweak_add' => 1,
+                                                      'secp256k1_ec_pubkey_tweak_mul' => 1,
+                                                      'secp256k1_ec_seckey_negate' => 1,
+                                                      'secp256k1_ec_seckey_tweak_add' => 1,
+                                                      'secp256k1_ec_seckey_tweak_mul' => 1,
+                                                      'secp256k1_ec_seckey_verify' => 1,
+                                                      'secp256k1_ecdh' => 1,
+                                                      'secp256k1_ecdh_hash_function_default' => -8,
+                                                      'secp256k1_ecdh_hash_function_sha256' => -8,
+                                                      'secp256k1_ecdsa_recover' => 1,
+                                                      'secp256k1_ecdsa_recoverable_signature_convert' => 1,
+                                                      'secp256k1_ecdsa_recoverable_signature_parse_compact' => 1,
+                                                      'secp256k1_ecdsa_recoverable_signature_serialize_compact' => 1,
+                                                      'secp256k1_ecdsa_sign' => 1,
+                                                      'secp256k1_ecdsa_sign_recoverable' => 1,
+                                                      'secp256k1_ecdsa_signature_normalize' => 1,
+                                                      'secp256k1_ecdsa_signature_parse_compact' => 1,
+                                                      'secp256k1_ecdsa_signature_parse_der' => 1,
+                                                      'secp256k1_ecdsa_signature_serialize_compact' => 1,
+                                                      'secp256k1_ecdsa_signature_serialize_der' => 1,
+                                                      'secp256k1_ecdsa_verify' => 1,
+                                                      'secp256k1_keypair_create' => 1,
+                                                      'secp256k1_keypair_pub' => 1,
+                                                      'secp256k1_keypair_sec' => 1,
+                                                      'secp256k1_keypair_xonly_pub' => 1,
+                                                      'secp256k1_keypair_xonly_tweak_add' => 1,
+                                                      'secp256k1_nonce_function_bip340' => -8,
+                                                      'secp256k1_nonce_function_default' => -8,
+                                                      'secp256k1_nonce_function_rfc6979' => -8,
+                                                      'secp256k1_schnorrsig_sign' => 1,
+                                                      'secp256k1_schnorrsig_sign32' => 1,
+                                                      'secp256k1_schnorrsig_sign_custom' => 1,
+                                                      'secp256k1_schnorrsig_verify' => 1,
+                                                      'secp256k1_scratch_space_create' => 1,
+                                                      'secp256k1_scratch_space_destroy' => 1,
+                                                      'secp256k1_selftest' => 1,
+                                                      'secp256k1_tagged_sha256' => 1,
+                                                      'secp256k1_xonly_pubkey_cmp' => 1,
+                                                      'secp256k1_xonly_pubkey_from_pubkey' => 1,
+                                                      'secp256k1_xonly_pubkey_parse' => 1,
+                                                      'secp256k1_xonly_pubkey_serialize' => 1,
+                                                      'secp256k1_xonly_pubkey_tweak_add' => 1,
+                                                      'secp256k1_xonly_pubkey_tweak_add_check' => 1
+                                                    }
+                       },
+          'Target' => 'unix',
+          'TypeInfo' => {
+                          '1' => {
+                                   'Name' => 'void',
+                                   'Type' => 'Intrinsic'
+                                 },
+                          '101' => {
+                                     'BaseType' => '118',
+                                     'Header' => 'secp256k1.h',
+                                     'Line' => '50',
+                                     'Name' => 'secp256k1_context',
+                                     'Size' => '208',
+                                     'Type' => 'Typedef'
+                                   },
+                          '10354' => {
+                                       'BaseType' => '312',
+                                       'Name' => 'secp256k1_pubkey*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '113' => {
+                                     'BaseType' => '101',
+                                     'Name' => 'secp256k1_context const',
+                                     'Size' => '208',
+                                     'Type' => 'Const'
+                                   },
+                          '11764' => {
+                                       'BaseType' => '324',
+                                       'Name' => 'secp256k1_pubkey const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '11769' => {
+                                       'BaseType' => '11764',
+                                       'Name' => 'secp256k1_pubkey const*const',
+                                       'Size' => '8',
+                                       'Type' => 'Const'
+                                     },
+                          '118' => {
+                                     'Line' => '62',
+                                     'Memb' => {
+                                                 '0' => {
+                                                          'name' => 'ecmult_gen_ctx',
+                                                          'offset' => '0',
+                                                          'type' => '2429'
+                                                        },
+                                                 '1' => {
+                                                          'name' => 'illegal_callback',
+                                                          'offset' => '360',
+                                                          'type' => '1355'
+                                                        },
+                                                 '2' => {
+                                                          'name' => 'error_callback',
+                                                          'offset' => '388',
+                                                          'type' => '1355'
+                                                        },
+                                                 '3' => {
+                                                          'name' => 'declassify',
+                                                          'offset' => '512',
+                                                          'type' => '84'
+                                                        }
+                                               },
+                                     'Name' => 'struct secp256k1_context_struct',
+                                     'PrivateABI' => 1,
+                                     'Size' => '208',
+                                     'Source' => 'secp256k1.c',
+                                     'Type' => 'Struct'
+                                   },
+                          '1335' => {
+                                      'BaseType' => '669',
+                                      'Name' => 'char const*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '1350' => {
+                                      'Name' => 'void(*)(char const*, void*)',
+                                      'Param' => {
+                                                   '0' => {
+                                                            'type' => '1335'
+                                                          },
+                                                   '1' => {
+                                                            'type' => '440'
+                                                          }
+                                                 },
+                                      'Return' => '1',
+                                      'Size' => '8',
+                                      'Type' => 'FuncPtr'
+                                    },
+                          '1355' => {
+                                      'Header' => 'util.h',
+                                      'Line' => '27',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'fn',
+                                                           'offset' => '0',
+                                                           'type' => '1350'
+                                                         },
+                                                  '1' => {
+                                                           'name' => 'data',
+                                                           'offset' => '8',
+                                                           'type' => '505'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_callback',
+                                      'PrivateABI' => 1,
+                                      'Size' => '16',
+                                      'Type' => 'Struct'
+                                    },
+                          '1481' => {
+                                      'BaseType' => '763',
+                                      'Name' => 'uint64_t[5]',
+                                      'Size' => '40',
+                                      'Type' => 'Array'
+                                    },
+                          '1497' => {
+                                      'Header' => 'field_5x52.h',
+                                      'Line' => '21',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'n',
+                                                           'offset' => '0',
+                                                           'type' => '1481'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_fe',
+                                      'PrivateABI' => 1,
+                                      'Size' => '40',
+                                      'Type' => 'Struct'
+                                    },
+                          '1534' => {
+                                      'BaseType' => '763',
+                                      'Name' => 'uint64_t[4]',
+                                      'Size' => '32',
+                                      'Type' => 'Array'
+                                    },
+                          '16661' => {
+                                       'BaseType' => '2966',
+                                       'Name' => 'secp256k1_ecdsa_recoverable_signature const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '17365' => {
+                                       'BaseType' => '2954',
+                                       'Name' => 'secp256k1_ecdsa_recoverable_signature*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '1819' => {
+                                      'Header' => 'scalar_4x64.h',
+                                      'Line' => '15',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'd',
+                                                           'offset' => '0',
+                                                           'type' => '1534'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_scalar',
+                                      'PrivateABI' => 1,
+                                      'Size' => '32',
+                                      'Type' => 'Struct'
+                                    },
+                          '184' => {
+                                     'BaseType' => '196',
+                                     'Header' => 'secp256k1.h',
+                                     'Line' => '63',
+                                     'Name' => 'secp256k1_scratch_space',
+                                     'Size' => '32',
+                                     'Type' => 'Typedef'
+                                   },
+                          '18622' => {
+                                       'BaseType' => '351',
+                                       'Name' => 'secp256k1_ecdsa_signature*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '196' => {
+                                     'Header' => 'scratch.h',
+                                     'Line' => '12',
+                                     'Memb' => {
+                                                 '0' => {
+                                                          'name' => 'magic',
+                                                          'offset' => '0',
+                                                          'type' => '2120'
+                                                        },
+                                                 '1' => {
+                                                          'name' => 'data',
+                                                          'offset' => '8',
+                                                          'type' => '440'
+                                                        },
+                                                 '2' => {
+                                                          'name' => 'alloc_size',
+                                                          'offset' => '22',
+                                                          'type' => '67'
+                                                        },
+                                                 '3' => {
+                                                          'name' => 'max_size',
+                                                          'offset' => '36',
+                                                          'type' => '67'
+                                                        }
+                                               },
+                                     'Name' => 'struct secp256k1_scratch_space_struct',
+                                     'PrivateABI' => 1,
+                                     'Size' => '32',
+                                     'Type' => 'Struct'
+                                   },
+                          '2021' => {
+                                      'Header' => 'group.h',
+                                      'Line' => '33',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'x',
+                                                           'offset' => '0',
+                                                           'type' => '1497'
+                                                         },
+                                                  '1' => {
+                                                           'name' => 'y',
+                                                           'offset' => '64',
+                                                           'type' => '1497'
+                                                         },
+                                                  '2' => {
+                                                           'name' => 'z',
+                                                           'offset' => '128',
+                                                           'type' => '1497'
+                                                         },
+                                                  '3' => {
+                                                           'name' => 'infinity',
+                                                           'offset' => '288',
+                                                           'type' => '84'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_gej',
+                                      'PrivateABI' => 1,
+                                      'Size' => '128',
+                                      'Type' => 'Struct'
+                                    },
+                          '2120' => {
+                                      'BaseType' => '300',
+                                      'Name' => 'unsigned char[8]',
+                                      'Size' => '8',
+                                      'Type' => 'Array'
+                                    },
+                          '23121' => {
+                                       'BaseType' => '11769',
+                                       'Name' => 'secp256k1_pubkey const*const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '23252' => {
+                                       'BaseType' => '101',
+                                       'Name' => 'secp256k1_context*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '2351' => {
+                                      'BaseType' => '84',
+                                      'Name' => 'int*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '2429' => {
+                                      'Header' => 'ecmult_gen.h',
+                                      'Line' => '38',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'built',
+                                                           'offset' => '0',
+                                                           'type' => '84'
+                                                         },
+                                                  '1' => {
+                                                           'name' => 'blind',
+                                                           'offset' => '8',
+                                                           'type' => '1819'
+                                                         },
+                                                  '2' => {
+                                                           'name' => 'initial',
+                                                           'offset' => '64',
+                                                           'type' => '2021'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_ecmult_gen_context',
+                                      'PrivateABI' => 1,
+                                      'Size' => '168',
+                                      'Type' => 'Struct'
+                                    },
+                          '2804' => {
+                                      'BaseType' => '2821',
+                                      'Header' => 'secp256k1_ecdh.h',
+                                      'Line' => '21',
+                                      'Name' => 'secp256k1_ecdh_hash_function',
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '2816' => {
+                                      'BaseType' => '2804',
+                                      'Name' => 'secp256k1_ecdh_hash_function const',
+                                      'Size' => '8',
+                                      'Type' => 'Const'
+                                    },
+                          '2821' => {
+                                      'Name' => 'int(*)(unsigned char*, unsigned char const*, unsigned char const*, void*)',
+                                      'Param' => {
+                                                   '0' => {
+                                                            'type' => '430'
+                                                          },
+                                                   '1' => {
+                                                            'type' => '435'
+                                                          },
+                                                   '2' => {
+                                                            'type' => '435'
+                                                          },
+                                                   '3' => {
+                                                            'type' => '440'
+                                                          }
+                                                 },
+                                      'Return' => '84',
+                                      'Size' => '8',
+                                      'Type' => 'FuncPtr'
+                                    },
+                          '284' => {
+                                     'BaseType' => '300',
+                                     'Name' => 'unsigned char[64]',
+                                     'Size' => '64',
+                                     'Type' => 'Array'
+                                   },
+                          '2938' => {
+                                      'BaseType' => '300',
+                                      'Name' => 'unsigned char[65]',
+                                      'Size' => '65',
+                                      'Type' => 'Array'
+                                    },
+                          '2954' => {
+                                      'Header' => 'secp256k1_recovery.h',
+                                      'Line' => '26',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'data',
+                                                           'offset' => '0',
+                                                           'type' => '2938'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_ecdsa_recoverable_signature',
+                                      'Size' => '65',
+                                      'Type' => 'Struct'
+                                    },
+                          '2966' => {
+                                      'BaseType' => '2954',
+                                      'Name' => 'secp256k1_ecdsa_recoverable_signature const',
+                                      'Size' => '65',
+                                      'Type' => 'Const'
+                                    },
+                          '2993' => {
+                                      'Header' => 'secp256k1_extrakeys.h',
+                                      'Line' => '24',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'data',
+                                                           'offset' => '0',
+                                                           'type' => '284'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_xonly_pubkey',
+                                      'Size' => '64',
+                                      'Type' => 'Struct'
+                                    },
+                          '300' => {
+                                     'Name' => 'unsigned char',
+                                     'Size' => '1',
+                                     'Type' => 'Intrinsic'
+                                   },
+                          '3005' => {
+                                      'BaseType' => '2993',
+                                      'Name' => 'secp256k1_xonly_pubkey const',
+                                      'Size' => '64',
+                                      'Type' => 'Const'
+                                    },
+                          '3032' => {
+                                      'BaseType' => '300',
+                                      'Name' => 'unsigned char[96]',
+                                      'Size' => '96',
+                                      'Type' => 'Array'
+                                    },
+                          '3048' => {
+                                      'Header' => 'secp256k1_extrakeys.h',
+                                      'Line' => '35',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'data',
+                                                           'offset' => '0',
+                                                           'type' => '3032'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_keypair',
+                                      'Size' => '96',
+                                      'Type' => 'Struct'
+                                    },
+                          '3060' => {
+                                      'BaseType' => '3048',
+                                      'Name' => 'secp256k1_keypair const',
+                                      'Size' => '96',
+                                      'Type' => 'Const'
+                                    },
+                          '3065' => {
+                                      'BaseType' => '3082',
+                                      'Header' => 'secp256k1_schnorrsig.h',
+                                      'Line' => '41',
+                                      'Name' => 'secp256k1_nonce_function_hardened',
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '307' => {
+                                     'BaseType' => '300',
+                                     'Name' => 'unsigned char const',
+                                     'Size' => '1',
+                                     'Type' => 'Const'
+                                   },
+                          '3077' => {
+                                      'BaseType' => '3065',
+                                      'Name' => 'secp256k1_nonce_function_hardened const',
+                                      'Size' => '8',
+                                      'Type' => 'Const'
+                                    },
+                          '3082' => {
+                                      'Name' => 'int(*)(unsigned char*, unsigned char const*, size_t, unsigned char const*, unsigned char const*, unsigned char const*, size_t, void*)',
+                                      'Param' => {
+                                                   '0' => {
+                                                            'type' => '430'
+                                                          },
+                                                   '1' => {
+                                                            'type' => '435'
+                                                          },
+                                                   '2' => {
+                                                            'type' => '67'
+                                                          },
+                                                   '3' => {
+                                                            'type' => '435'
+                                                          },
+                                                   '4' => {
+                                                            'type' => '435'
+                                                          },
+                                                   '5' => {
+                                                            'type' => '435'
+                                                          },
+                                                   '6' => {
+                                                            'type' => '67'
+                                                          },
+                                                   '7' => {
+                                                            'type' => '440'
+                                                          }
+                                                 },
+                                      'Return' => '84',
+                                      'Size' => '8',
+                                      'Type' => 'FuncPtr'
+                                    },
+                          '312' => {
+                                     'Header' => 'secp256k1.h',
+                                     'Line' => '76',
+                                     'Memb' => {
+                                                 '0' => {
+                                                          'name' => 'data',
+                                                          'offset' => '0',
+                                                          'type' => '284'
+                                                        }
+                                               },
+                                     'Name' => 'struct secp256k1_pubkey',
+                                     'Size' => '64',
+                                     'Type' => 'Struct'
+                                   },
+                          '3197' => {
+                                      'BaseType' => '300',
+                                      'Name' => 'unsigned char[4]',
+                                      'Size' => '4',
+                                      'Type' => 'Array'
+                                    },
+                          '3213' => {
+                                      'Header' => 'secp256k1_schnorrsig.h',
+                                      'Line' => '86',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => 'magic',
+                                                           'offset' => '0',
+                                                           'type' => '3197'
+                                                         },
+                                                  '1' => {
+                                                           'name' => 'noncefp',
+                                                           'offset' => '8',
+                                                           'type' => '3065'
+                                                         },
+                                                  '2' => {
+                                                           'name' => 'ndata',
+                                                           'offset' => '22',
+                                                           'type' => '440'
+                                                         }
+                                                },
+                                      'Name' => 'struct secp256k1_schnorrsig_extraparams',
+                                      'Size' => '24',
+                                      'Type' => 'Struct'
+                                    },
+                          '324' => {
+                                     'BaseType' => '312',
+                                     'Name' => 'secp256k1_pubkey const',
+                                     'Size' => '64',
+                                     'Type' => 'Const'
+                                   },
+                          '32552' => {
+                                       'BaseType' => '363',
+                                       'Name' => 'secp256k1_ecdsa_signature const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '33882' => {
+                                       'BaseType' => '67',
+                                       'Name' => 'size_t*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '351' => {
+                                     'Header' => 'secp256k1.h',
+                                     'Line' => '89',
+                                     'Memb' => {
+                                                 '0' => {
+                                                          'name' => 'data',
+                                                          'offset' => '0',
+                                                          'type' => '284'
+                                                        }
+                                               },
+                                     'Name' => 'struct secp256k1_ecdsa_signature',
+                                     'Size' => '64',
+                                     'Type' => 'Struct'
+                                   },
+                          '363' => {
+                                     'BaseType' => '351',
+                                     'Name' => 'secp256k1_ecdsa_signature const',
+                                     'Size' => '64',
+                                     'Type' => 'Const'
+                                   },
+                          '368' => {
+                                     'BaseType' => '385',
+                                     'Header' => 'secp256k1.h',
+                                     'Line' => '107',
+                                     'Name' => 'secp256k1_nonce_function',
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '380' => {
+                                     'BaseType' => '368',
+                                     'Name' => 'secp256k1_nonce_function const',
+                                     'Size' => '8',
+                                     'Type' => 'Const'
+                                   },
+                          '38014' => {
+                                       'BaseType' => '184',
+                                       'Name' => 'secp256k1_scratch_space*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '385' => {
+                                     'Name' => 'int(*)(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, void*, unsigned int)',
+                                     'Param' => {
+                                                  '0' => {
+                                                           'type' => '430'
+                                                         },
+                                                  '1' => {
+                                                           'type' => '435'
+                                                         },
+                                                  '2' => {
+                                                           'type' => '435'
+                                                         },
+                                                  '3' => {
+                                                           'type' => '435'
+                                                         },
+                                                  '4' => {
+                                                           'type' => '440'
+                                                         },
+                                                  '5' => {
+                                                           'type' => '447'
+                                                         }
+                                                },
+                                     'Return' => '84',
+                                     'Size' => '8',
+                                     'Type' => 'FuncPtr'
+                                   },
+                          '430' => {
+                                     'BaseType' => '300',
+                                     'Name' => 'unsigned char*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '435' => {
+                                     'BaseType' => '307',
+                                     'Name' => 'unsigned char const*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '440' => {
+                                     'BaseType' => '1',
+                                     'Name' => 'void*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '447' => {
+                                     'Name' => 'unsigned int',
+                                     'Size' => '4',
+                                     'Type' => 'Intrinsic'
+                                   },
+                          '466' => {
+                                     'BaseType' => '113',
+                                     'Name' => 'secp256k1_context const*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '4692' => {
+                                      'BaseType' => '3005',
+                                      'Name' => 'secp256k1_xonly_pubkey const*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '505' => {
+                                     'BaseType' => '515',
+                                     'Name' => 'void const*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '515' => {
+                                     'BaseType' => '1',
+                                     'Name' => 'void const',
+                                     'Type' => 'Const'
+                                   },
+                          '5156' => {
+                                      'BaseType' => '3060',
+                                      'Name' => 'secp256k1_keypair const*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '5161' => {
+                                      'BaseType' => '3213',
+                                      'Name' => 'secp256k1_schnorrsig_extraparams*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '53' => {
+                                    'Name' => 'unsigned long',
+                                    'Size' => '8',
+                                    'Type' => 'Intrinsic'
+                                  },
+                          '621' => {
+                                     'BaseType' => '53',
+                                     'Header' => 'types.h',
+                                     'Line' => '45',
+                                     'Name' => '__uint64_t',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '662' => {
+                                     'Name' => 'char',
+                                     'Size' => '1',
+                                     'Type' => 'Intrinsic'
+                                   },
+                          '669' => {
+                                     'BaseType' => '662',
+                                     'Name' => 'char const',
+                                     'Size' => '1',
+                                     'Type' => 'Const'
+                                   },
+                          '67' => {
+                                    'BaseType' => '53',
+                                    'Header' => 'stddef.h',
+                                    'Line' => '209',
+                                    'Name' => 'size_t',
+                                    'PrivateABI' => 1,
+                                    'Size' => '8',
+                                    'Type' => 'Typedef'
+                                  },
+                          '763' => {
+                                     'BaseType' => '621',
+                                     'Header' => 'stdint-uintn.h',
+                                     'Line' => '27',
+                                     'Name' => 'uint64_t',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '84' => {
+                                    'Name' => 'int',
+                                    'Size' => '4',
+                                    'Type' => 'Intrinsic'
+                                  },
+                          '9351' => {
+                                      'BaseType' => '3048',
+                                      'Name' => 'secp256k1_keypair*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '9934' => {
+                                      'BaseType' => '2993',
+                                      'Name' => 'secp256k1_xonly_pubkey*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    }
+                        },
+          'UndefinedSymbols' => {
+                                  'libsecp256k1.so.1.0.0' => {
+                                                               '_ITM_deregisterTMCloneTable' => 0,
+                                                               '_ITM_registerTMCloneTable' => 0,
+                                                               '__cxa_finalize@GLIBC_2.2.5' => 0,
+                                                               '__fprintf_chk@GLIBC_2.3.4' => 0,
+                                                               '__gmon_start__' => 0,
+                                                               '__memcpy_chk@GLIBC_2.3.4' => 0,
+                                                               '__stack_chk_fail@GLIBC_2.4' => 0,
+                                                               'abort@GLIBC_2.2.5' => 0,
+                                                               'free@GLIBC_2.2.5' => 0,
+                                                               'malloc@GLIBC_2.2.5' => 0,
+                                                               'memcpy@GLIBC_2.14' => 0,
+                                                               'memset@GLIBC_2.2.5' => 0,
+                                                               'stderr@GLIBC_2.2.5' => 0
+                                                             }
+                                },
+          'WordSize' => '8'
+        };
