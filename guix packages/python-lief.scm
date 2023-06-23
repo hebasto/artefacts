@@ -3,7 +3,6 @@
              ((gnu packages python-build) #:select (python-tomli))
              (guix packages)
              (guix build-system python)
-             (guix gexp)
              (guix git-download)
              ((guix licenses) #:prefix license:))
 
@@ -31,15 +30,15 @@
     (build-system python-build-system)
     (native-inputs (list cmake-minimal python-tomli))
     (arguments
-     (list
-      #:tests? #f                  ;needs network
-      #:phases #~(modify-phases %standard-phases
-                   (add-before 'build 'change-directory
-                     (lambda _
-                       (chdir "api/python")))
-                   (replace 'build
-                     (lambda _
-                       (invoke "python" "setup.py" "build"))))))
+     `(#:tests? #f ; needs network
+       #:phases
+       (modify-phases %standard-phases
+         (add-before 'build 'change-directory
+           (lambda _
+             (chdir "api/python")))
+         (replace 'build
+           (lambda _
+             (invoke "python" "setup.py" "build"))))))
     (home-page "https://github.com/lief-project/LIEF")
     (synopsis "Library to instrument executable formats")
     (description
