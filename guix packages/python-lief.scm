@@ -9,7 +9,7 @@
 
 (package
     (name "python-lief")
-    (version "0.13.1")
+    (version "0.13.2")
     (source (origin
               (method git-fetch)
               (uri (git-reference
@@ -27,7 +27,7 @@
                      (string-append m (number->string (parallel-job-count)))))))
               (sha256
                (base32
-                "0ms6zsb6mm6jys8nbfl2nml4l2y1zcgy26639adznj4n7b8n7lxk"))))
+                "0y48x358ppig5xp97ahcphfipx7cg9chldj2q5zrmn610fmi4zll"))))
     (build-system python-build-system)
     (native-inputs (list cmake-minimal python-tomli))
     (arguments
