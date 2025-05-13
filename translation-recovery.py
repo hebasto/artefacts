@@ -16,6 +16,8 @@ def load_ts_translations(ts_path):
 
     for context in root.findall('context'):
         for msg in context.findall('message'):
+            if msg.get('numerus') == 'yes':
+                continue  # Skip plural messages
             source = msg.findtext('source')
             translation = msg.findtext('translation') or ''
             if source:
