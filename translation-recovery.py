@@ -43,6 +43,8 @@ def update_xliff_targets(xliff_path, translations, output_path):
         source_elem = trans_unit.find('.//source', namespaces)
         source = source_elem.text if source_elem is not None else None
         target_elem = trans_unit.find('.//target', namespaces)
+        if target_elem is None:
+            continue
 
         if source in translations:
             if target_elem.text == source or target_elem.text == '':
